@@ -1,0 +1,35 @@
+
+<h1 class="emoji">🐍</h1>
+<h1 class="page-tittle">Master components (control plane)</h1>
+
+
+<img class='img-blog' src="/assets/k8s_components.svg" alt="image">
+
+<h3>etcd</h3>
+<p>Is a distributed key-value store that is used to store the configuration data of the Kubernetes cluster. It is used by the Kubernetes master components to store cluster state information, such as the API objects representing the state of the cluster. etcd is designed to be highly available, fault-tolerant, and scalable.</p>
+
+<p>etcd is deployed to your control-plane node to the kube-system namespace for example to get all keys you can try</p>
+
+<code>{{kubectl_snippet_one}}</code>
+
+<h3>kube-apiserver</h3>
+<p>Is a primary control plane component that serves the Kubernetes API. It is responsible for processing REST operations, validating them, and updating the etcd datastore. kube-apiserver exposes the Kubernetes API, which is used by other control plane components, nodes, and other applications to interact with the Kubernetes cluster.</p>
+
+<p>You have two ways to check kube-apiserver option</p>
+
+<ul>
+    <li>in a normal kubeadm setup you can configure your cluster from this file /etc/systemd/syste/kube-apiserver.service</li>
+    <li>or check the running process using ps -aux | grep kube-apiserver</li>
+</ul>
+
+
+<h3>kube-controller-manager</h3>
+<p>Kube-controller-manager is a control plane component that runs various controllers, which are responsible for maintaining the desired state of the cluster. It includes the Node Controller, Replication Controller, and Endpoint Controller, among others.</p>
+
+<p> check the running component and options using ps -aux | grep kube-controller-manager</p>
+
+
+<h3>kube-scheduler</h3>
+<p>Kube-scheduler is a Kubernetes control plane component that is responsible for scheduling workloads to run on nodes in the cluster. It assigns workloads to nodes based on resource requirements and availability.</p>
+
+<p>  check the running component and options using ps -aux | grep kube-scheduler</p>

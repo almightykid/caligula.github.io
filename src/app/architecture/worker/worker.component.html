@@ -1,0 +1,13 @@
+<h1 class="emoji">🐀</h1>
+<h1 class="page-tittle">Node components</h1>
+
+<p>or called minion been controlled by the master node (control-plane)</p>
+
+<h3>Kubelet</h3>
+<p>Kubelet is the primary node agent that runs on each node in a Kubernetes cluster. Its main responsibility is to manage the state of the node, including starting and stopping containers, monitoring their health, and reporting back to the Kubernetes control plane.</p>
+
+<h3>Kube-proxy</h3>
+<p>Kube-proxy is another node component in a Kubernetes cluster that is responsible for managing network connectivity between different services in the cluster. It routes traffic to the appropriate Kubernetes service, load balances traffic, and enforces network policies. Also kube-proxy is installed as a demonset on each node on the cluster</p>
+
+<h3>Container runtime (e.g. Docker)</h3>
+<p>Container runtime (CR) is the software responsible for running containers on a node. Examples of container runtimes include Docker, containerd, and CRI-O. Container Runtime Interface (CRI) is an API that defines the interface between Kubernetes and the container runtime. It allows Kubernetes to work with different container runtimes without modifying the core Kubernetes codebase. CRI is implemented by container runtimes to provide a standard interface for Kubernetes.</p>

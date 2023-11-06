@@ -1,0 +1,20 @@
+
+
+.home-header {
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-bottom: 10%;
+}
+
+.home-links {
+    margin-left: 15%;
+    cursor:pointer;
+}
+
+h1 {
+    margin-bottom: 3%;
+}
+
+.link:hover {
+    color: #F5F1FE;
+}

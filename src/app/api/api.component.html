@@ -1,0 +1,23 @@
+<h1 class="emoji">🔥</h1>
+<h1 class="page-tittle">API primitives and basic objects</h1>
+
+
+<h3>API Primitives and Basic Objects</h3>
+<ul>
+  <li>API resources: objects that represent the state of the cluster</li>
+  <li>Pods: smallest deployable units in Kubernetes</li>
+  <li>ReplicaSets: ensures a specified number of replicas of a pod are running</li>
+  <li>Deployments: declarative updates for Pods and ReplicaSets</li>
+  <li>Services: abstraction that defines a logical set of Pods and a policy to access them</li>
+</ul>
+
+
+<h3>NOTE</h3>
+<p>svc - related to consider when creating a service using </p>
+
+<ul>
+  <li>kubectl expose ... command that you can not use the command line parameters to set the nodeports</li>
+  <li>kubectl create service … command that you can not use a command line parameter —selector to set the selector on a service </li>
+</ul>
+
+<p>You need to do it using expose command or the declarative way using a yaml file</p>
